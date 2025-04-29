@@ -1,3 +1,3 @@
-module go_code_review
+module circleci-go-code-review
 
 go 1.24.2
