@@ -14,6 +14,7 @@ func main() {
 func Countdown(start int, writer ...io.Writer) {
 
 	output := io.Writer(os.Stdout)
+
 	if len(writer) > 0 {
 		output = writer[0]
 	}
