@@ -27,7 +27,7 @@ jobs:
             fi
 
       - run:
-          name: Trigger AI gatekeeper check
+          name: Trigger AI gatekeeper check.
           command: |
             echo "Triggering AI Review Agent for comment reactions and patch check..."
             STATUS_CODE=$(curl -s -w "%{http_code}" -o result.txt "$AI_REVIEW_AGENT_URL/check-reactions?repo=$REPO_NAME")
